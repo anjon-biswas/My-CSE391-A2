@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Fortune Generator</h2>
+        <div class="fortune-box" id="fortune-box"></div>
+        <div>
+            <button class="action-btn" onclick="changeFontColor()">Change Font Color</button>
+            <button class="action-btn" onclick="changeBgColor()">Change Background</button>
+            <button class="action-btn" onclick="changeBorderColor()">Change Border</button>
+            <button class="action-btn" onclick="changeFontStyle()">Change Font Style</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Stopwatch</h2>
+        <div id="stopwatch">0</div>
+        <button class="action-btn" id="start">Start</button>
+        <button class="action-btn" id="stop">Stop</button>
+        <button class="action-btn" id="reset">Reset</button>
+    </div>
+    
+    <div class="container">
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button class="action-btn" onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+    
+    <footer>© 2025 All-in-One App</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
