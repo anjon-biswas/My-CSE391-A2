@@ -1,58 +1,88 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     margin: 0;
-    padding: 20px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
-    background: white;
+    background-color: #ffffff;
     padding: 20px;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
 }
 
 .fortune-box {
-    padding: 10px;
-    border: 2px solid black;
-    margin: 10px 0;
-    min-height: 50px;
+    padding: 20px;
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: all 0.5s ease;
 }
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+.color-box1 { background-color: #ff595e; }
+.color-box2 { background-color: #1982c4; }
+.color-box3 { background-color: #8ac926; }
+.color-box4 { background-color: #ffca3a; }
 
 .action-btn {
-    padding: 10px;
+    padding: 8px 12px;
     margin: 5px;
     border: none;
-    cursor: pointer;
-    background-color: #007bff;
+    background-color: #0077cc;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.action-btn:active {
-    background-color: #0056b3;
+.action-btn:hover {
+    background-color: #005fa3;
 }
 
-#stopwatch {
-    font-size: 24px;
-    margin: 10px 0;
+input[type="text"] {
+    padding: 8px;
+    width: 70%;
+    max-width: 300px;
+    margin-right: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
-#taskList {
-    list-style-type: none;
-    padding: 0;
-}
-
-#taskList li {
-    background: #fff;
-    padding: 10px;
-    margin: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
 }
